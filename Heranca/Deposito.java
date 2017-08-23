@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 public class Deposito
 {
 	private ArrayList< Produto > produtos;
@@ -19,6 +20,7 @@ public class Deposito
 	 */
 	public void addProduto( Produto theProduto )
 	{
+		System.out.println( ">>> Inserting a new Product <<<" );
 		produtos.add( theProduto );
 	}
 
@@ -48,7 +50,7 @@ public class Deposito
 	 */
 	public int getQtdProdutos()
 	{
-		System.out.println( "Has " + produtos.size() + " on Database." );
+		System.out.println( "Has " + produtos.size() + " item(ns) on Database." );
 		return produtos.size();
 	}
 
@@ -78,16 +80,32 @@ public class Deposito
 	public Produto mostValuable()
 	{
 		Produto most = new Produto( "default", 0.0, "default", "default", "default" );
-
+	
 		for ( Produto current : produtos )
 		{
 			if ( current.getPreco() > most.getPreco() )
 			{
+					
 				most = current;
 			}
 		}
 
+		System.out.println(">>> Most Valuable Product <<<");
+		most.print();
+
 		return most;
 	}
+
+
+	public void printDatabase()
+	{
+		System.out.println( "\n>>> DATABASE <<<" );
+		for ( Produto current : produtos )
+		{
+			current.print();
+		}
+		System.out.println( ">>> END OF DATABASE <<<\n" );
+	}
+		
 
 }

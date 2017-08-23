@@ -106,4 +106,14 @@ public class Produto
 		return data_de_fabr;
 	}
 
+
+	public void print()
+	{
+		System.out.println( "Name   	  : " + getNome()
+				  + "\nPrice  	  : R$ " + getPreco()
+				  + "\nBrand        : " + getMarca()
+				  + "\nDescription  : " + getDescricao() 
+				  + "\nManufacture Day : "+ getDataDeFabr() );
+	}
+
 }
