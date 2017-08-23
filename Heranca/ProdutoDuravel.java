@@ -10,7 +10,7 @@ public class ProdutoDuravel extends Produto
 	{
 		super( nome, preco, marca, descricao, data_de_fabr );
 
-		if ( !material_pred.equals( null ) || durabilidade > 0 )
+		if ( material_pred != null && durabilidade > 0 )
 		{
 			this.material_pred = material_pred;
 			this.durabilidade = durabilidade;
@@ -22,7 +22,7 @@ public class ProdutoDuravel extends Produto
 
 	public void setMaterialPred( String material_pred ) throws IllegalArgumentException
 	{
-		if ( !material_pred.equals( null ) )
+		if ( material_pred != null )
 		{
 			this.material_pred = material_pred;
 		} else 

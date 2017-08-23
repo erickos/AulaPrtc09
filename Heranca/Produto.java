@@ -11,8 +11,8 @@ public class Produto
 
 	public Produto ( String nome, double preco, String marca, String descricao, String data_de_fabr ) throws IllegalArgumentException
 	{
-		if ( preco > 0 || !nome.equals(null) || !marca.equals(null)
-			|| descricao.equals(null) || data_de_fabr.equals(null) )
+		if ( preco > 0 && nome != null && marca != null
+			&& descricao != null && data_de_fabr != null )
 		{
 			this.nome = nome;
 			this.preco = preco;
