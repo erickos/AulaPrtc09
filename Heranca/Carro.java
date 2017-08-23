@@ -28,6 +28,7 @@ public class Carro extends ProdutoDuravel
 
 	}
 
+	// Gets and Sets methods.
 	public void setAno( int ano ) throws IllegalArgumentException
 	{
 		if ( ano > 1900 )

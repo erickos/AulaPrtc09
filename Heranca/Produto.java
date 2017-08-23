@@ -11,7 +11,7 @@ public class Produto
 
 	public Produto ( String nome, double preco, String marca, String descricao, String data_de_fabr ) throws IllegalArgumentException
 	{
-		if ( preco > 0 && nome != null && marca != null
+		if ( preco >= 0.0 && nome != null && marca != null
 			&& descricao != null && data_de_fabr != null )
 		{
 			this.nome = nome;
@@ -25,9 +25,16 @@ public class Produto
 		}
 	}
 
-	public void setNome( String nome )
+	// Gets and Sets methods.
+	public void setNome( String nome ) throws IllegalArgumentException
 	{
-		this.nome = nome;
+		if ( nome != null )
+		{
+			this.nome = nome;
+		} else
+		{
+			throw new IllegalArgumentException( "Name can't be null!!" );
+		}
 	}
 
 	public String getNome()
@@ -35,9 +42,15 @@ public class Produto
 		return nome;
 	}
 
-	public void setPreco( double preco )
+	public void setPreco( double preco ) throws IllegalArgumentException
 	{
-		this.preco = preco;
+		if ( preco >= 0.0 )
+		{
+			this.preco = preco;
+		} else 
+		{
+			throw new IllegalArgumentException( "Price can't be negative!!" );
+		}
 	}
 
 	public double getPreco()
@@ -45,9 +58,15 @@ public class Produto
 		return preco;
 	}
 
-	public void setMarca( String marca )
+	public void setMarca( String marca ) throws IllegalArgumentException
 	{
-		this.marca = marca;
+		if ( marca != null )
+		{
+			this.marca = marca;
+		} else 
+		{
+			throw new IllegalArgumentException( "Brand can't be null!!" );
+		}
 	}
 
 	public String getMarca()
@@ -55,9 +74,15 @@ public class Produto
 		return marca;
 	}
 
-	public void setDescricao( String descricao )
+	public void setDescricao( String descricao ) throws IllegalArgumentException
 	{
-		this.descricao = descricao;
+		if ( descricao != null )
+		{
+			this.descricao = descricao;
+		} else 
+		{
+			throw new IllegalArgumentException( "Description can't be null!!" );
+		}
 	}
 
 	public String getDescricao()
@@ -65,9 +90,15 @@ public class Produto
 		return descricao;
 	}
 
-	public void setDataDeFabr( String data_de_fabr )
+	public void setDataDeFabr( String data_de_fabr ) throws IllegalArgumentException
 	{
-		this.data_de_fabr = data_de_fabr;
+		if ( data_de_fabr != null )
+		{
+			this.data_de_fabr = data_de_fabr;
+		} else 
+		{
+			throw new IllegalArgumentException( "Fabrication date can't be null!!" );
+		}
 	}
 
 	public String getDataDeFabr()

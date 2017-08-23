@@ -26,6 +26,7 @@ public class ProdutoNaoDuravel extends Produto
 		}
 	}
 
+	// Gets and Sets methods.
 	public void setDataDeValid( String data_de_valid ) throws IllegalArgumentException
 	{
 		if ( data_de_valid != null )

@@ -5,8 +5,13 @@ public class ProdutoDuravel extends Produto
 	private String material_pred;
 	private int durabilidade;
 
-	public ProdutoDuravel( String nome, double preco, String marca, String descricao, String data_de_fabr, String material_pred, int durabilidade )
-		throws IllegalArgumentException
+	public ProdutoDuravel( String nome
+						, double preco
+						, String marca
+						, String descricao
+						, String data_de_fabr
+						, String material_pred
+						, int    durabilidade      ) throws IllegalArgumentException
 	{
 		super( nome, preco, marca, descricao, data_de_fabr );
 
@@ -20,6 +25,7 @@ public class ProdutoDuravel extends Produto
 		}
 	}
 
+	// Gets and Sets methods.
 	public void setMaterialPred( String material_pred ) throws IllegalArgumentException
 	{
 		if ( material_pred != null )

@@ -35,6 +35,7 @@ public class Livro extends ProdutoDuravel
 		}
 	}
 
+	// Gets and Sets methods.
 	public void setAutor( String autor ) throws IllegalArgumentException
 	{
 		if ( autor != null )

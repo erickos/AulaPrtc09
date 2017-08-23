@@ -31,6 +31,7 @@ public class Celular extends ProdutoDuravel
 
 	}
 
+	// Gets and Sets methods.
 	public void setTamanhoTela( double tamanho_tela ) throws IllegalArgumentException
 	{
 		if ( tamanho_tela >= min_tamanho_tela )
