@@ -1,11 +1,29 @@
 import java.lang.IllegalArgumentException;
 
+/**
+ * Implements a Pizza class as ProdutoNaoDuravel subclass.
+ *
+ * @author Erick de Oliveira Silva
+ * @version 2017.08.23
+ */
 public class Pizza extends ProdutoNaoDuravel
 {
 
 	private String tamanho;
 	private String recheio;
 
+	/**
+	 * Default constructor.
+	 *
+	 * @param nome Name of the product.
+	 * @param preco Price of the product.
+	 * @param marca Brand of the product.
+	 * @param data_de_fabr Manufacture date of the product.
+	 * @param data_de_valid Expire date of the non-durable product.
+	 * @param genero Genre of the non-durable product.
+	 * @param tamanho Size of the pizza product. (P, M, G, GG)
+	 * @param recheio Stuffing on pizza product. (Mossarella, Calabresa, Portuguesa, 4 Queijos, Chocolate).
+	 */ 
 	public Pizza( String nome
 						, double preco
 						, String marca

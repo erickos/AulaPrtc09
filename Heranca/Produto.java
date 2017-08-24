@@ -8,7 +8,14 @@ public class Produto
 	private String descricao;
 	private String data_de_fabr;
 
-
+	/**
+	 * Default constructor.
+	 *
+	 * @param nome Name of the product.
+	 * @param preco Price of the product.
+	 * @param marca Brand of the product.
+	 * @param data_de_fabr Manufacture date of the product.
+	 */ 
 	public Produto ( String nome, double preco, String marca, String descricao, String data_de_fabr ) throws IllegalArgumentException
 	{
 		if ( preco >= 0.0 && nome != null && marca != null
@@ -109,7 +116,7 @@ public class Produto
 
 	public void print()
 	{
-		System.out.println( "Name   	  : " + getNome()
+		System.out.println( "\nName   	  : " + getNome()
 				  + "\nPrice  	  : R$ " + getPreco()
 				  + "\nBrand        : " + getMarca()
 				  + "\nDescription  : " + getDescricao() 

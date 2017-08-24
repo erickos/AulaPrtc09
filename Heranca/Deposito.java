@@ -1,8 +1,15 @@
 import java.util.ArrayList;
 
-
+/**
+ * Implement a Deposito class. 
+ * As a database to store Products and manipulate them.
+ * 
+ * @author Erick de Oliveira Silva
+ * @version 2017.08.23
+ */
 public class Deposito
 {
+	// Array to guard the database of Deposito.
 	private ArrayList< Produto > produtos;
 
 	/** 
@@ -50,7 +57,7 @@ public class Deposito
 	 */
 	public int getQtdProdutos()
 	{
-		System.out.println( "Has " + produtos.size() + " item(ns) on Database." );
+		System.out.println( "Has " + produtos.size() + " item(ns) on Database.\n" );
 		return produtos.size();
 	}
 
@@ -63,10 +70,10 @@ public class Deposito
 	{
 		if ( produtos.isEmpty() )
 		{
-			System.out.println( "The Database is empty!" );
+			System.out.println( "The Database is empty!!\n" );
 		} else 
 		{
-			System.out.println( "The Database are not empty!" );
+			System.out.println( "The Database are not empty!!\n" );
 			getQtdProdutos();
 		}
 		return produtos.isEmpty();
@@ -96,7 +103,9 @@ public class Deposito
 		return most;
 	}
 
-
+	/**
+	 * Print the actual Database. Using the print method defined on Produto class.
+	 */
 	public void printDatabase()
 	{
 		System.out.println( "\n>>> DATABASE <<<" );

@@ -1,10 +1,29 @@
 import java.lang.IllegalArgumentException;
 
+/**
+ * Implements a Carro class as ProdutoDuravel subclass.
+ *
+ * @author Erick de Oliveira Silva
+ * @version 2017.08.23
+ */
 public class Carro extends ProdutoDuravel
 {
+	// Car's exclusive atributes.
 	private int ano;
 	private String tipo; // Sedan, Esportivo, Conversivel, Hatch.
 
+	/**
+	 * Default constructor.
+	 *
+	 * @param nome Name of the product.
+	 * @param preco Price of the product.
+	 * @param marca Brand of the product.
+	 * @param data_de_fabr Manufacture date of the product.
+	 * @param material_pred Predominant material of the durable product.
+	 * @param durabilidade Durability, in years, of the durable product.
+	 * @param ano Year of the car product.
+	 * @param tipo Type of car product (Sedan, Esportivo, Conversivel, Hatch).
+	 */ 
 	public Carro(  String nome
 				,  double preco
 				,  String marca

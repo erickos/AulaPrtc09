@@ -1,14 +1,34 @@
 import java.lang.IllegalArgumentException;
 
+/**
+ * Implements a Livro class as ProdutoDuravel subclass.
+ *
+ * @author Erick de Olvieira Silva
+ * @version 2017.08.23
+ */
 public class Livro extends ProdutoDuravel
 {
-
+	// Livro's exclusive atributes.
 	private String autor;
 	private int numero_de_pag;
 	private String edicao;
 
+	// Definition of minimum of pages in a book.
 	private static int min_num_pages = 10; // Default
 
+	/**
+	 * Default constructor.
+	 *
+	 * @param nome Name of the product.
+	 * @param preco Price of the product.
+	 * @param marca Brand of the product.
+	 * @param data_de_fabr Manufacture date of the product.
+	 * @param material_pred Predominant material of the durable product.
+	 * @param durabilidade Durability, in years, of the durable product.
+	 * @param autor Name of the author of book product.
+	 * @param numero_de_pag Number of pages in the book product.
+	 * @param edicao Edition of the book product.
+	 */ 
 	public Livro(  String nome
 				,  double preco
 				,  String marca
