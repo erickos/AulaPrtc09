@@ -1,12 +1,24 @@
 import java.lang.IllegalArgumentException;
 
+/**
+ * Definition of a professor class.
+ *
+ * @author Erick de Oliveira Silva.
+ * @version 2017.08.23
+ */
 public class Professor
 {
 	private String nome;
 	private String matricula;
 	private int idade;
 	
-	// Default constructor.
+	/**
+	 * Default constructor, throws exception if the argument are invalid.
+	 *
+	 * @param nome Name of the teacher.
+	 * @param matricula Teacher's id on school.
+	 * @param idade Teacher's age.
+	 */ 
 	public Professor( String nome, String matricula, int idade ) throws IllegalArgumentException
 	{
 		if ( idade > 16 || nome.equals( null ) || matricula.equals( null ) )
@@ -20,6 +32,7 @@ public class Professor
 		}
 	}
 
+	// Gets and Sets methods.
 	public void setNome( String nome )
 	{
 		this.nome = nome;

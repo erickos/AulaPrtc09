@@ -1,11 +1,25 @@
 import java.lang.NumberFormatException;
 
+/**
+ * Definition of a Substitute Teacher class as Professor subclass.
+ *
+ * @author Erick de Oliveira Silva.
+ * @version 2017.08.23
+ */
 public class ProfessorHorista extends Professor
 {
 	private int total_horas;
 	private String salario_hora;
 
-	// Default constructor.
+	/**
+	 * Default constructor, throws exception if the argument are invalid.
+	 *
+	 * @param nome Name of the teacher.
+	 * @param matricula Teacher's id on school.
+	 * @param idade Teacher's age.
+	 * @oaram total_horas Total of hours worked by teacher.
+	 * @param salario_hora Value of each hour of teacher work.
+	 */ 
 	public ProfessorHorista( String nome, String matricula, int idade, int total_horas, String salario_hora ) throws NumberFormatException
 	{
 		super( nome, matricula, idade );
@@ -24,6 +38,7 @@ public class ProfessorHorista extends Professor
 		}	
 	}	
 
+	// Gets and Sets methods.
 	public void setTotalHoras( int total_horas )
 	{
 		this.total_horas = total_horas;
