@@ -54,11 +54,16 @@ public class ProfessorHorista extends Professor
 		this.salario_hora = salario_hora;
 	}
 
-	public String salario_hora()
+	public String getSalarioHora()
 	{
 		return salario_hora;
 	}
 
+	/**
+	 * Calculates and return the total salary value.
+	 *
+	 * @return Total salary of this teacher.
+	 */
 	public double salario()
 	{
 		double salario_horaDoubl = Double.parseDouble( salario_hora );
