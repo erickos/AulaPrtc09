@@ -2,8 +2,8 @@
 
 ## Descrição
 
-Escola : Implementar uma Herança entre Professor e duas subclasses( ProfessorHorista, ProfessorRegime ).
-Herança : Implementar um projeto com 2 níveis de subclasses. Produto é superclasse de ProdutoDuravel e ProdutoNaoDuravel.
+Escola : Implementar uma Herança entre Professor e duas subclasses( ProfessorHorista, ProfessorRegime ).\n
+Herança : Implementar um projeto com 2 níveis de subclasses. Produto é superclasse de ProdutoDuravel e ProdutoNaoDuravel.\n
 ProdutoDuravel é superclasse de Carro, Livro e Celular. ProdutoNaoDuravel como superclasse de Pizza, Refrigerante, Chocolate.
 Locavel: Implementar um sistema de aluguel de veiculos utilizando Herança, Polimorfismo, Sobrescrita, Responsabilidade de classes. A locadora possui dois tipos de veiculos : Carros e Motos.
 
